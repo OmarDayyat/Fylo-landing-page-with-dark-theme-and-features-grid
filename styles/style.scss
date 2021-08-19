@@ -1,0 +1,384 @@
+@import "_variables.scss";
+
+/*=================
+  General
+  =================*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 14px;
+  font-family: $font-body;
+}
+
+h1{
+  font-family: $font-headings;
+  color: $White;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+h2{
+  color: $White;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p{
+  color: $White;
+  opacity: 0.9;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*=================
+  Navigation Bar
+  =================*/
+
+.navigation-bar{
+  font-family: $font-headings;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $Dark-Blue-intro-background;
+  padding: 40px;
+}
+
+.logo{
+  transform: scale(0.8);
+}
+
+.nav-btn{
+  margin-right: 60px;
+  &:hover{
+    text-decoration: underline;
+    font-weight: 700;
+  }
+}
+
+.nav-btn{
+  color: white;
+}
+
+/*=================
+  Intro Container
+  =================*/
+
+.intro-container{
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  background: url("../images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: $Dark-Blue-intro-background;
+}
+
+.intro-container-contents{
+  grid-column-start: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    width: 70%;
+  }
+}
+
+.intro-paragraph{
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+.intro-btn{
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+  width: 30%;
+  background: linear-gradient(90deg, $Cyan-inside-gradient, $Blue-inside-gradient);
+  &:hover{
+  background: linear-gradient(90deg, $Cyan-inside-gradient-light, $Blue-inside-gradient-light);
+    
+  }
+}
+
+/*=================
+  Info Container
+  =================*/
+
+.info-container{
+  background-color: $Dark-Blue-main-background;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+
+
+/*=================
+  Feature Container
+  =================*/
+
+.features-container{
+  display: flex;
+  grid-column-start: 2;
+}
+
+.feature{
+  text-align: center;
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p{
+    width: 75%;
+  }
+}
+
+/*=================
+  Card Container
+  =================*/
+
+.card-container{
+  grid-column-start: 2;
+  grid-row-start: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1{
+    line-height: 1.3;
+    font-size: 2.3rem;
+  }
+  p{
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.card-btn-container{
+    display: flex;
+    border-bottom: 1px solid $Cyan-inside-gradient;
+    width: fit-content;
+    align-items: center;
+    a{
+      color: $Cyan-inside-gradient;
+      &:hover{
+        color: white;
+      }
+    }
+    &:hover{
+      border-bottom: 1px solid $White;
+    }
+}
+
+/*=================
+  Feed Back Container
+  =================*/
+
+.feed-back-container{
+  grid-column-start: 2;
+  grid-row-start: 4;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.feed-back-card{
+  background-color: $Dark-Blue-testimonials-background;
+  padding: 40px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.feed-back-user{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  p{
+    margin-left: 10px;
+    font-size: 0.9rem;
+    span{
+    display: block;
+    font-size: 0.7rem;
+    opacity: 0.5;
+    }
+  }
+}
+
+/*=================
+  Footer
+  =================*/
+
+footer{
+  position: relative;
+  background-color: $Dark-Blue-footer-background;
+}
+
+.box-container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $Dark-Blue-intro-background;
+  border-radius: 10px;
+  width: 60%;
+  right: 20%;
+  left: 20%;
+  transform: translatey(-50%);
+  text-align: center;
+  h1{
+    margin-bottom: 20px;
+  }
+  p{
+    width: 70%;
+    margin-bottom: 30px;
+  }
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+input{
+  width: 50%;
+  border-radius: 50px;
+  padding: 10px;
+  border: 0;
+}
+
+.form-btn{
+  cursor: pointer;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+  width: 30%;
+  margin-left: 10px;
+  border: 0px;
+  background: linear-gradient(90deg, $Cyan-inside-gradient, $Blue-inside-gradient);
+  &:hover{
+  background: linear-gradient(90deg, $Cyan-inside-gradient-light, $Blue-inside-gradient-light);
+  }
+}
+
+.footer-contents{
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 0.25fr;
+
+}
+
+.footer-col-1{
+  grid-column-start: 2;
+}
+
+
+.footer-col-2{
+  grid-column-start: 3;
+}
+
+.footer-col-3{
+  grid-column-start: 4;
+}
+
+.footer-col-4{
+  grid-column-start: 5;
+}
+
+.footer-col-5{
+  grid-column-start: 6;
+}
+
+.fab{
+  cursor: pointer;
+  border-color: $White;
+  color: $White;
+  &:hover{
+    border-color: $Cyan-inside-gradient;
+  color: $Cyan-inside-gradient;
+  }
+}
+
+.fa-facebook-f{
+  border: 1px solid ;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 9px 10px;
+  margin-right: 10px;
+}
+
+.fa-twitter{
+  border: 1px solid;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 8px 8px;
+  margin-right: 10px;
+}
+
+.fa-instagram{
+  border: 1px solid ;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 8px 8px;
+  margin-right: 10px;
+}
+
+.contact{
+  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  a{
+    color: $White;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    &:hover{
+      width: fit-content;
+      font-weight: 700;
+    }
+  }
+}
+
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  .fas{
+    margin-right: 10px;
+    color: $White;
+    transform: translateY(30%);
+  }
+}
+
+
+/*=================
+  Attribtution
+  =================*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

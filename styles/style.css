@@ -104,6 +104,10 @@ a {
           align-items: center;
 }
 
+.intro-container-contents img {
+  max-width: 100%;
+}
+
 .intro-container-contents h1 {
   width: 70%;
 }
@@ -188,6 +192,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.card-container img {
+  max-width: 100%;
 }
 
 .card-container h1 {
@@ -503,5 +511,192 @@ input {
 
 .attribution a {
   color: #3e52a3;
+}
+
+/*=================================================================
+                                      Media
+  =================================================================*/
+@media only screen and (max-width: 1024px) {
+  /*=================
+  General
+  =================*/
+  p {
+    font-size: 0.9rem;
+  }
+  a {
+    font-size: 0.9rem;
+  }
+  /*=================
+  Navigation Bar
+  =================*/
+  .navigation-bar {
+    padding: 40px 10px;
+  }
+  .logo {
+    width: 100px;
+  }
+  .nav-btn {
+    margin-right: 40px;
+  }
+  /*=================
+  Intro Container
+  =================*/
+  .intro-container {
+    -ms-grid-columns: 1fr 10fr 1fr;
+        grid-template-columns: 1fr 10fr 1fr;
+  }
+  .intro-container-contents h1 {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  .intro-paragraph {
+    width: 100%;
+  }
+  .intro-btn {
+    width: 80%;
+    margin-bottom: 80px;
+  }
+  /*=================
+  Info Container
+  =================*/
+  .info-container {
+    -ms-grid-columns: 1fr 10fr 1fr;
+        grid-template-columns: 1fr 10fr 1fr;
+  }
+  /*=================
+  Feature Container
+  =================*/
+  .features-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feature {
+    margin: 40px 0;
+  }
+  .feature p {
+    width: 100%;
+  }
+  /*=================
+  Card Container
+  =================*/
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 80px;
+  }
+  .card-container h1 {
+    font-size: 1.4rem;
+  }
+  /*=================
+  Feed Back Container
+  =================*/
+  .feed-back-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .quotation {
+    -webkit-transform: translate(-12%, 30%) scale(0.7);
+            transform: translate(-12%, 30%) scale(0.7);
+    z-index: 0;
+  }
+  .feed-back-card {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  /*=================
+  Footer
+  =================*/
+  .box-container {
+    width: 90%;
+    right: 5%;
+    left: 5%;
+    -webkit-transform: translatey(-50%);
+            transform: translatey(-50%);
+    text-align: center;
+  }
+  .box-container h1 {
+    font-size: 2rem;
+  }
+  .box-container p {
+    width: 90%;
+  }
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  input {
+    width: 90%;
+  }
+  .form-btn {
+    font-size: 0.9rem;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .footer-contents {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
+        grid-template-rows: 1.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
+  }
+  .logo-footer {
+    top: 20%;
+  }
+  .footer-col-1 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  .footer-col-2 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+  }
+  .footer-col-3 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+  }
+  .footer-col-4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+  }
+  .footer-col-5 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+  }
+  .contact {
+    margin-left: 20px;
+  }
+  .contact a {
+    margin-left: 20px;
+  }
+  .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

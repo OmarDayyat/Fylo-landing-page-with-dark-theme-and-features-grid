@@ -86,6 +86,9 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  img{
+    max-width: 100%;
+  }
   h1{
     width: 70%;
   }
@@ -150,6 +153,9 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
+  img{
+    max-width: 100%;
+  }
   h1{
     line-height: 1.3;
     font-size: 2.3rem;
@@ -389,7 +395,6 @@ input{
   }
 }
 
-
 /*=================
   Attribtution
   =================*/
@@ -401,4 +406,207 @@ input{
   a {
     color: hsl(228, 45%, 44%);
   }
+}
+
+
+/*=================================================================
+                                      Media
+  =================================================================*/
+
+@media only screen and (max-width:1024px){
+
+/*=================
+  General
+  =================*/
+
+p{
+  font-size: 0.9rem;
+}
+
+a{
+  font-size: 0.9rem;
+}
+
+/*=================
+  Navigation Bar
+  =================*/
+
+.navigation-bar{
+  padding: 40px 10px;
+}
+
+.logo{
+  width: 100px;
+}
+
+.nav-btn{
+  margin-right: 40px;
+}
+
+/*=================
+  Intro Container
+  =================*/
+
+.intro-container{
+  grid-template-columns: 1fr 10fr 1fr;
+}
+
+.intro-container-contents{
+  h1{
+    font-size: 1.8rem;
+    width: 100%;
+  }
+}
+
+.intro-paragraph{
+  width: 100%;
+}
+
+.intro-btn{
+  width: 80%;    
+  margin-bottom: 80px;
+}
+
+/*=================
+  Info Container
+  =================*/
+
+.info-container{
+  grid-template-columns: 1fr 10fr 1fr;
+}
+
+
+/*=================
+  Feature Container
+  =================*/
+
+.features-container{
+  flex-direction: column;
+}
+
+.feature{
+  margin: 40px 0;
+  p{
+    width: 100%;
+  }
+}
+
+/*=================
+  Card Container
+  =================*/
+
+.card-container{
+  flex-direction: column;
+  margin-top: 80px;
+  h1{
+    font-size: 1.4rem;
+  }
+}
+
+/*=================
+  Feed Back Container
+  =================*/
+
+.feed-back-container{
+  flex-direction: column;
+}
+
+.quotation{
+  transform: translate(-12%,30%) scale(0.7);
+  z-index: 0;
+}
+
+.feed-back-card{
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+
+
+/*=================
+  Footer
+  =================*/
+
+.box-container{
+  width: 90%;
+  right: 5%;
+  left: 5%;
+  transform: translatey(-50%);
+  text-align: center;
+  h1{
+    font-size: 2rem;
+  }
+  p{
+    width: 90%;
+  }
+}
+
+form{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input{
+  width: 90%;
+}
+
+.form-btn{
+  font-size: 0.9rem;
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 0px;
+ 
+}
+
+.footer-contents{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.25fr 0.25fr 0.25fr 0.25fr 0.25fr;
+}
+
+.logo-footer{
+  top: 20%;
+}
+
+.footer-col-1{
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+
+.footer-col-2{
+  grid-column-start: 1;
+  grid-row-start: 3;
+
+}
+
+.footer-col-3{
+  grid-column-start: 1;
+  grid-row-start: 4;
+
+}
+
+.footer-col-4{
+  grid-column-start: 1;
+  grid-row-start: 5;
+
+}
+
+.footer-col-5{
+  grid-column-start: 1;
+  grid-row-start: 6;
+}
+
+.contact{
+  margin-left: 20px;
+  a{
+    margin-left: 20px;
+  }
+}
+
+.social-media{
+  display: flex;
+  justify-content: center;
+}
+
+
 }

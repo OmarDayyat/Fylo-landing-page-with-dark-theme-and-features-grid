@@ -333,7 +333,7 @@ form {
       -ms-flex-pack: center;
           justify-content: center;
   width: 80%;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 input {
@@ -358,6 +358,14 @@ input {
 .form-btn:hover {
   background: -webkit-gradient(linear, left top, right top, from(#baf2ee), to(#85c5e0));
   background: linear-gradient(90deg, #baf2ee, #85c5e0);
+}
+
+.error-msg {
+  display: none;
+  text-align: left;
+  margin-left: 65px;
+  color: red;
+  font-size: 0.8rem;
 }
 
 .footer-contents {

@@ -259,7 +259,7 @@ form{
   display: flex;
   justify-content: center;
   width: 80%;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 input{
@@ -281,6 +281,14 @@ input{
   &:hover{
   background: linear-gradient(90deg, $Cyan-inside-gradient-light, $Blue-inside-gradient-light);
   }
+}
+
+.error-msg{
+  display: none;
+  text-align: left;
+  margin-left: 65px;
+  color: red;
+  font-size: 0.8rem;
 }
 
 .footer-contents{

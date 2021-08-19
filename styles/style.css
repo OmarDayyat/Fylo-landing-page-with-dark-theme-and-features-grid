@@ -84,7 +84,7 @@ a {
       grid-template-columns: 1fr 6fr 1fr;
   background: url("../images/bg-curvy-desktop.svg");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: bottom;
   background-color: #1c2431;
 }
 
@@ -242,11 +242,18 @@ a {
   margin-bottom: 200px;
 }
 
+.quotation {
+  -webkit-transform: translate(80%, -17%);
+          transform: translate(80%, -17%);
+  z-index: 0;
+}
+
 .feed-back-card {
   background-color: #202a3c;
   padding: 40px 20px;
   margin-right: 20px;
   border-radius: 5px;
+  z-index: 1;
 }
 
 .feed-back-user {
@@ -358,8 +365,14 @@ input {
   display: grid;
   -ms-grid-columns: 1fr 3fr 2fr 2fr 2fr 2fr 1fr;
       grid-template-columns: 1fr 3fr 2fr 2fr 2fr 2fr 1fr;
-  -ms-grid-rows: 1fr 1fr 0.25fr;
-      grid-template-rows: 1fr 1fr 0.25fr;
+  -ms-grid-rows: 1.25fr 1fr 0.25fr;
+      grid-template-rows: 1.25fr 1fr 0.25fr;
+}
+
+.logo-footer {
+  top: 35%;
+  width: 100px;
+  position: absolute;
 }
 
 .footer-col-1 {
